@@ -1,0 +1,2 @@
+opencv-python
+dlib  # Facultatif si tu utilises uniquement Haar Cascade
