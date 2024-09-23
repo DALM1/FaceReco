@@ -12,10 +12,10 @@ while True:
     if not ret or frame is None:
         continue
 
-    print(f"Frame dimensions: {frame.shape}")
+    print(f"[Frame dimensions - {frame.shape}]")
 
     frame_bgr = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
-    cv2.imshow('Raw Frame', frame_bgr)
+    cv2.imshow('Raw', frame_bgr)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
